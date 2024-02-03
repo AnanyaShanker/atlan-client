@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Card from 'react-bootstrap/Card';
-import backgroundImage from './images/galaxy.jpg';
+import backgroundImage from './images/space_11.webp';
 
 const Home = () => {
   const [cardData, setCardData] = useState([]);

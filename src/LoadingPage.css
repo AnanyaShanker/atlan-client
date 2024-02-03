@@ -1,0 +1,34 @@
+/* LoadingPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+.loading-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #020609; /* Dark blue background for loading page */
+  color: #ffffff; /* White text color */
+  font-family: 'Playfair Display', serif; /* Use a mysterious-looking font */
+}
+
+.loading-page img {
+  width: 300px; /* Adjust the width as needed */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.loading-page p {
+  font-size: 1.5rem;
+}
+
+.loading-page::before {
+  content: '\1F680'; /* Rocket emoji */
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.loading-page::after {
+  content: 'Launching...'; /* Loading text */
+  font-size: 1.2rem;
+}
