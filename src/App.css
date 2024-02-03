@@ -1,0 +1,129 @@
+/* App.css */
+
+.custom-navbar-bg {
+  background-color: #020609; /* Dark purple */
+  padding: 15px 0;
+}
+
+.custom-brand-text {
+  color: #29abe2; /* Light blue text */
+  font-size: 24px;
+}
+
+.custom-toggler {
+  border-color: #29abe2; /* Light blue border for the toggler */
+}
+
+.custom-nav-link {
+  color: #ffffff;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.custom-dropdown {
+  color: #29abe2; /* Light blue text */
+}
+
+.custom-dropdown-item {
+  color: #29abe2;
+}
+
+.custom-dropdown-menu {
+  background-color: #e50a0a; /* Dark purple */
+  border: 1px solid #7d57a1; /* Lighter purple */
+}
+
+.custom-dropdown-menu a {
+  color: #ffffff;
+  padding: 10px 15px;
+}
+
+.custom-dropdown-menu a:hover {
+  background-color: #de0707; /* Lighter purple */
+  color: #2a1733; /* Dark purple */
+}
+
+.btn-spaceship {
+  background-color: #29abe2; /* Light blue background for the spaceship button */
+  color: #ffffff; /* White text color */
+  border: none;
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-spaceship:hover {
+  background-color: #1c7da2; /* Darker blue on hover */
+}
+/* App.css */
+
+.custom-card {
+  width: 350px;
+  height: 200px;
+  margin: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform-origin: center bottom;
+  opacity: 0;
+  background-color: #020609; /* Dark blue background for cards */
+}
+
+.loaded .custom-card {
+  opacity: 1;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.custom-card .card-body {
+  padding: 20px;
+  background-color: #12161b; /* Dark background for card body */
+  color: #ffffff;
+}
+
+.custom-card .card-title {
+  color: #29abe2; /* Light blue text for card title */
+  font-size: 1.8rem;
+}
+
+.custom-card .card-subtitle {
+  color: #feffff;
+}
+
+.custom-card .card-text {
+  color: #ffffff;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.loaded {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+.btn-custom {
+  background-color: #1c7da2; /* Change this to the desired color */
+  color: #ffffff; /* Text color */
+}
+
+.btn-custom:hover {
+  background-color: #72a7bb; /* Change this to the desired color on hover */
+}
+
+
+
