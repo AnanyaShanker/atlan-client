@@ -4,7 +4,7 @@
   {
     "id": 1,
     "name": "Image Classification Model",
-    "description": "A deep learning model for image classification tasks.",
+    "description": "Efficient image classification model leveraging deep neural networks to accurately categorize diverse visual content with high precision",
     "featured": true,
     "views": 1200,
     "favorites": 35,
@@ -19,7 +19,7 @@
     {
       "id": 2,
       "name": "Natural Language Processing Model",
-      "description": " Interprets and generates human-like text for translation, sentiment analysis, and chatbot development.",
+      "description": " Empowering machines with Natural Language Processing, enabling them to comprehend, interpret, and generate human-like language seamlessly.",
       
       
       "featured": true,
@@ -38,7 +38,7 @@
     "description": "Converts spoken language to written text with advanced algorithms and neural networks, facilitating voice commands and transcription.",
     
     "featured": true,
-    "views": 1500,
+    "views": 1600,
     "favorites": 42,
     "model_description": "Speech recognition technology has evolved significantly, and the Speech Recognition Model leverages the DeepSpeech framework, an open-source initiative by Mozilla. DeepSpeech employs deep neural networks to achieve state-of-the-art accuracy in transcribing spoken language, making it suitable for diverse applications.",
     "provider": "Mozilla DeepSpeech",
