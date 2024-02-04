@@ -1,0 +1,12 @@
+/* Home.css */
+body.home-page {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://media.wired.co.uk/photos/606dafcb687a704c2c362125/16:9/w_1920,h_1080,c_limit/space_11.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  

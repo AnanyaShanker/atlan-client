@@ -1,5 +1,6 @@
 /* App.css */
-body {
+/* Home.css */
+body.home-page {
   margin: 0;
   padding: 0;
   background-image: url('https://media.wired.co.uk/photos/606dafcb687a704c2c362125/16:9/w_1920,h_1080,c_limit/space_11.jpg');
@@ -9,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 
 .custom-navbar-bg {
   background-color: #020609;
@@ -124,4 +126,28 @@ body {
 }
 .btn-explore:hover {
   background-color: #1c7da2; /* Darker blue on hover */
+}
+
+
+/* ModelDetail.css */
+.custom-model-detail-container {
+  background-color: #f0eeee;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-model-detail-container .custom-model-detail-title {
+  color: #1c7da2 !important;
+  font-size: 2rem;
+}
+
+.custom-model-detail-container .custom-model-detail-description {
+  color: #fbfbfb !important;
+  margin-bottom: 10px;
+}
+
+.custom-model-detail-container .custom-model-detail-provider {
+  color: #29abe2 !important;
 }
