@@ -5,8 +5,6 @@
     "id": 1,
     "name": "Image Classification Model",
     "description": "A deep learning model for image classification tasks.",
-    
-    
     "featured": true,
     "views": 1200,
     "favorites": 35,
@@ -21,7 +19,7 @@
     {
       "id": 2,
       "name": "Natural Language Processing Model",
-      "description": "The Natural Language Processing (NLP) Model is a machine learning model designed to understand, interpret, and generate human-like text. It enables computers to comprehend and analyze natural language, making it a key technology in various applications such as language translation, sentiment analysis, and chatbot development.",
+      "description": " Interprets and generates human-like text for translation, sentiment analysis, and chatbot development.",
       
       
       "featured": true,
@@ -37,7 +35,7 @@
   {
     "id": 3,
     "name": "Speech Recognition Model",
-    "description": "The Speech Recognition Model is a powerful machine learning model designed to convert spoken language into written text. It utilizes advanced algorithms and neural networks to analyze audio data and accurately transcribe spoken words into text. Speech recognition has widespread applications in various domains, enabling voice commands, transcription services, and more.",
+    "description": "Converts spoken language to written text with advanced algorithms and neural networks, facilitating voice commands and transcription.",
     
     "featured": true,
     "views": 1500,
