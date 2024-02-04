@@ -9,8 +9,10 @@
     "framework": "TensorFlow",
     "featured": true,
     "views": 1200,
-    "favorites": 35
-  },
+    "favorites": 35,
+    "model description": "The Image Classification Model is a machine learning model designed to classify images into predefined categories or labels. Its primary goal is to accurately predict the class or category of an input image based on the patterns and features it has learned during training. Image classification is a fundamental task in computer vision and has a wide range of applications in various industries.",
+    "provider": "The provider of the Image Classification Model can vary, as several organizations, research institutions, and cloud service providers offer pre-trained models or allow users to train custom models based on their specific needs. Common providers include Google Cloud Vision AI, Amazon Rekognition, Microsoft Azure Computer Vision, and various open-source deep learning frameworks like TensorFlow and PyTorch."
+    },
   {
     "id": 2,
     "name": "Natural Language Processing Model",

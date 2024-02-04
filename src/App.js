@@ -1,11 +1,14 @@
 // App.js
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Navbar } from 'react-bootstrap';
 import Home from './Home';
+import LoadingPage from './LoadingPage';
 import ModelDetailPage from './ModelDetailPage'; // Import the ModelDetailPage component
-import LoadingPage from './LoadingPage'; // Import the LoadingPage component
+import Explore from './Explore.js';
 import './App.css';
+//import './Explore.css';
 
 const App = () => {
   const [showModelDetail, setShowModelDetail] = useState(false);
@@ -31,7 +34,7 @@ const App = () => {
   }, []);
 
   return (
-    <>
+    <Router>
       <Navbar expand="lg" className="custom-navbar-bg">
         <Container>
           <Navbar.Brand href="#home" className="custom-brand-text">
@@ -40,20 +43,21 @@ const App = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
           <Navbar.Collapse id="basic-navbar-nav">
             <button className="btn btn-primary btn-spaceship" onClick={handleWhatsTrendingClick}>
-              🚀 What's Trending!
+              <span role="img" aria-label="Rocket">🚀</span> What's Trending!
+            </button>
+            <button className="btn btn-primary btn-explore" onClick={() => window.open('/explore', '_blank')}>
+              <span role="img" aria-label="Globe">🌎</span> Explore
             </button>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      
       {/* Conditional rendering: show either the ModelDetailPage, LoadingPage, or Home component */}
-      {showLoading ? (
-        <LoadingPage />
-      ) : showModelDetail ? (
-        <ModelDetailPage />
-      ) : (
-        <Home />
-      )}
-    </>
+      <Routes>
+        <Route path="/" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <Home />)} />
+        <Route path="/explore" element={<Explore />} />
+      </Routes>
+    </Router>
   );
 };
 

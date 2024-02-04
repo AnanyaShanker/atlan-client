@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .custom-navbar-bg {
   background-color: #020609; /* Dark purple */
   padding: 15px 0;
@@ -134,3 +135,16 @@ body {
   background-color: #72a7bb; /* Change this to the desired color on hover */
 }
 
+/* App.css */
+.btn-explore {
+  background-color: #29abe2; /* Light blue background for the spaceship button */
+  color: #ffffff; /* White text color */
+  border: none;
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btn-explore:hover {
+  background-color: #1c7da2; /* Darker blue on hover */
+}

@@ -1,25 +1,25 @@
 /* ModelDetailPage.css */
 .model-detail-page {
-    background-image: url('https://i.pinimg.com/564x/a6/1e/39/a61e39571a62a9ea556a43afc8c81336.jpg'); /* Replace with the path to your image */
+    background-image: url('https://i.pinimg.com/564x/a6/1e/39/a61e39571a62a9ea556a43afc8c81336.jpg');
     background-size: cover;
-    color:#ffffff;
+    color: #ffffff;
     background-position: center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    opacity: 1; /* Set initial opacity to 0 */
-    transition: opacity 1s ease-in-out; /* Add a transition for opacity property */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
   }
+  
   .sort-buttons {
     margin-bottom: 20px;
-    text-align: center; /* Center align the sort buttons */
+    text-align: center;
   }
   
-  
   .sort-buttons button {
-    background-color: #1c7da2; /* Dark blue background for sort buttons */
-    color: #ffffff; /* White text color */
+    background-color: #1c7da2;
+    color: #ffffff;
     border: none;
     margin: 5px;
     padding: 10px 20px;
@@ -28,29 +28,29 @@
   }
   
   .sort-buttons button:hover {
-    background-color: #72a7bb; /* Lighter blue on hover */
+    background-color: #72a7bb;
   }
   
   .model-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center content horizontally */
-    align-items: flex-start; /* Align content to the start vertically (top) */
-    margin-top: 20px; /* Add some top margin for spacing */
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
   }
   
   .model-card {
-    width: 400px; /* Adjust width as needed */
-    height: 250px; /* Adjust height as needed */
+    width: 400px;
+    height: 250px;
     margin: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Add opacity transition */
     transform-origin: center bottom;
-    opacity: 1;
-    background-color: #020609; /* Dark blue background for cards */
+    opacity: 0; /* Set initial opacity to 0 */
+    background-color: #020609;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally within the card */
+    align-items: center;
     padding: 20px;
   }
   
@@ -60,21 +60,27 @@
   }
   
   .model-card h3 {
-    color: #29abe2; /* Light blue text for model name */
+    color: #29abe2;
     font-size: 1.8rem;
   }
   
   .model-card p {
-    color: #ffffff; /* White text color */
+    color: #ffffff;
   }
   
-  /* Additional styling for sorted by text */
   .sort-info {
-    color: #29abe2; /* Light blue text color */
+    color: #29abe2;
     font-size: 1.2rem;
     margin-top: 10px;
   }
+  
   /* Add a class to trigger the transition */
-.model-detail-page.loaded {
+  .model-detail-page.loaded {
     opacity: 1;
   }
+  
+  /* Add a class to trigger the transition for cards */
+  .model-detail-page.loaded .model-card {
+    opacity: 1;
+  }
+  
