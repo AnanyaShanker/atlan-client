@@ -5,8 +5,8 @@
     "id": 1,
     "name": "Image Classification Model",
     "description": "A deep learning model for image classification tasks.",
-    "type": "Computer Vision",
-    "framework": "TensorFlow",
+    
+    
     "featured": true,
     "views": 1200,
     "favorites": 35,
@@ -22,8 +22,8 @@
       "id": 2,
       "name": "Natural Language Processing Model",
       "description": "The Natural Language Processing (NLP) Model is a machine learning model designed to understand, interpret, and generate human-like text. It enables computers to comprehend and analyze natural language, making it a key technology in various applications such as language translation, sentiment analysis, and chatbot development.",
-      "type": "Natural Language Processing",
-      "framework": "Transformers",
+      
+      
       "featured": true,
       "views": 1500,
       "favorites": 50,
@@ -38,8 +38,7 @@
     "id": 3,
     "name": "Speech Recognition Model",
     "description": "The Speech Recognition Model is a powerful machine learning model designed to convert spoken language into written text. It utilizes advanced algorithms and neural networks to analyze audio data and accurately transcribe spoken words into text. Speech recognition has widespread applications in various domains, enabling voice commands, transcription services, and more.",
-    "type": "Natural Language Processing",
-    "framework": "DeepSpeech",
+    
     "featured": true,
     "views": 1500,
     "favorites": 42,
@@ -53,8 +52,7 @@
     "id": 4,
     "name": "Object Detection Model",
     "description": "An advanced machine learning model designed to identify and locate objects within images or videos.",
-    "type": "Computer Vision",
-    "framework": "TensorFlow",
+    
     "featured": true,
     "views": 1500,
     "favorites": 42,
@@ -69,8 +67,7 @@
     "id": 5,
     "name": "Recommender System Model",
     "description": "The Recommender System Model is a machine learning model designed to provide personalized recommendations to users based on their preferences and behavior. It leverages collaborative filtering, content-based filtering, or hybrid methods to analyze user data and suggest items such as movies, products, or content that the user is likely to find interesting.",
-    "type": "Recommendation System",
-    "framework": "Surprise",
+    
     "featured": true,
     "views": 1800,
     "favorites": 55,
