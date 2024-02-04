@@ -45,22 +45,8 @@
     "code": "import deepspeech\n\n# Create a DeepSpeech model\nmodel = deepspeech.Model('path/to/deepspeech_model.pb')\n\n# Load an audio file\naudio_file = 'path/to/audio_file.wav'\n\n# Perform speech recognition\ntranscription = model.stt(audio_file)\n\n# Print the transcription\nprint('Transcription:', transcription)",
     "potential_use_cases": "\nVoice Assistants: Enable voice-controlled virtual assistants for hands-free interaction. \nTranscription Services: Automatically transcribe spoken content in meetings, interviews, or recorded audio. \nAccessibility: Improve accessibility for individuals with disabilities by converting spoken words into text.",
     "image_url": "https://images.spiceworks.com/wp-content/uploads/2022/04/14152224/116.png"
-  },
-  {
-    "id": 4,
-    "name": "Object Detection Model",
-    "description": "An advanced machine learning model designed to identify and locate objects within images or videos.",
-    
-    "featured": true,
-    "views": 1500,
-    "favorites": 42,
-    "model_description": "The Object Detection Model is a powerful computer vision model used to detect and locate various objects within visual data. It can identify multiple objects in an image or video frame and provide bounding boxes around them, along with their corresponding class labels. Object detection plays a crucial role in applications such as autonomous vehicles, surveillance systems, and image-based search engines.",
-    "provider": "Various providers offer pre-trained Object Detection Models, including Google Cloud Vision AI, Microsoft Azure Computer Vision, and TensorFlow's object detection API.",
-    "code": "from PIL import Image\nimport requests\nfrom io import BytesIO\nimport matplotlib.pyplot as plt\n\n# Example code for using Object Detection Model\n\n# Load an image for detection\nimage_url = 'https://example.com/path/to/your/image.jpg'\nresponse = requests.get(image_url)\nimg = Image.open(BytesIO(response.content))\n\n# Perform object detection\n# (Replace the following line with the actual object detection code)\n# detected_objects = model.detect_objects(img)\n\n# Display the original image with bounding boxes\nplt.imshow(img)\n# (Replace the following line with code to draw bounding boxes)\n# draw_boxes_on_image(img, detected_objects)\nplt.show()",
-    "potential_use_cases": "\nAutonomous Vehicles: Detecting pedestrians, vehicles, and obstacles for safe navigation.\n Surveillance Systems: Identifying and tracking objects in security footage.\n3. Retail Analytics: Monitoring product availability and customer interactions.\n4. Image-based Search Engines: Improving search results by recognizing objects in images.\n5. Industrial Automation: Quality control and defect detection in manufacturing processes.",
-    "image_url": "https://www.researchgate.net/publication/309912830/figure/fig1/AS:582966486028288@1516001449457/Basic-Object-Detection-Model.png"
-
   }
+
   
 ]
 }
