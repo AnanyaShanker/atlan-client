@@ -10,7 +10,9 @@ const ModelDetail = () => {
 
   useEffect(() => {
     // Fetch the specific model data using the id
-    axios.get(`https://my-json-server.typicode.com/AnanyaShanker/atlan-client/models/${id}`)
+    axios.get(`https://my-json-server.typicode.com/AnanyaShanker/atlan-client/models/${id}`, {
+      maxContentLength: 2000000, // Set an appropriate value based on your needs
+    })
       .then(response => {
         console.log(response.data); // Log the specific model data
         setModelData(response.data);

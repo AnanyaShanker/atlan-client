@@ -1,5 +1,5 @@
 // Explore.js
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Explore.css';
 
 const Explore = () => {
@@ -7,7 +7,6 @@ const Explore = () => {
     modelName: '',
     description: '',
     providerName: '',
-    // Remove providerDescription field
   });
 
   const [publicPosts, setPublicPosts] = useState([]);
@@ -22,16 +21,11 @@ const Explore = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add logic to handle the submission of information (e.g., API call)
-    console.log('Submitted Information:', formData);
-    // Add the submitted info to the public posts
     setPublicPosts([...publicPosts, formData]);
-    // Reset the form after submission
     setFormData({
       modelName: '',
       description: '',
       providerName: '',
-      // Remove providerDescription from the reset state
     });
   };
 
@@ -80,14 +74,18 @@ const Explore = () => {
         </div>
       </form>
 
+      {/* "Explore Space" Displayed Separately */}
+      <div>
+        <h2 className="explore-subheading">Explore Space</h2>
+      </div>
+
       {/* Display Public Posts */}
       <div>
-        <h2 className="explore-heading">Explore Space</h2>
         {publicPosts.map((post, index) => (
-          <div key={index} className="public-post">
-            <h3>{post.providerName}</h3>
-            <p>{post.description}</p>
-            {/* Add other fields as needed */}
+          <div key={index} className="submitted-info-box">
+            <h3>{post.modelName}</h3>
+            <p>Description: {post.description}</p>
+            <p>Provider: {post.providerName}</p>
           </div>
         ))}
       </div>

@@ -1,15 +1,6 @@
 /* App.css */
+
 /* Home.css */
-body.home-page {
-  margin: 0;
-  padding: 0;
-  background-image: url('https://media.wired.co.uk/photos/606dafcb687a704c2c362125/16:9/w_1920,h_1080,c_limit/space_11.jpg');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
 
 
 .custom-navbar-bg {
@@ -45,11 +36,12 @@ body.home-page {
 .btn-spaceship:hover {
   background-color: #1c7da2; /* Darker blue on hover */
 }
-/* App.css */
 
+/* App.css */
 .custom-card {
-  width: 350px;
-  height: 200px;
+  flex-basis: calc(33.33% - 40px); /* Set the flex-basis to 33.33% minus margin on both sides */
+  box-sizing: border-box; /* Include padding and border in the total width */
+  height: 200px; /* Set a fixed height for all cards */
   margin: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -84,7 +76,11 @@ body.home-page {
 
 .custom-card .card-text {
   color: #ffffff;
+  max-height: 80px; /* Set a maximum height for the text */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 
 .card-container {
   display: flex;
@@ -104,7 +100,6 @@ body.home-page {
   }
 }
 
-
 .btn-custom {
   background-color: #1c7da2; /* Change this to the desired color */
   color: #ffffff; /* Text color */
@@ -115,8 +110,11 @@ body.home-page {
 }
 
 /* App.css */
-.btn-explore {
-  background-color: #29abe2; /* Light blue background for the spaceship button */
+/* App.css */
+
+.btn-explore,
+.btn-whats-trending {
+  background-color: #29abe2; /* Light blue background for the button */
   color: #ffffff; /* White text color */
   border: none;
   margin: 20px;
@@ -124,30 +122,9 @@ body.home-page {
   cursor: pointer;
   font-size: 16px;
 }
-.btn-explore:hover {
+
+.btn-explore:hover,
+.btn-whats-trending:hover {
   background-color: #1c7da2; /* Darker blue on hover */
 }
 
-
-/* ModelDetail.css */
-.custom-model-detail-container {
-  background-color: #f0eeee;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.custom-model-detail-container .custom-model-detail-title {
-  color: #1c7da2 !important;
-  font-size: 2rem;
-}
-
-.custom-model-detail-container .custom-model-detail-description {
-  color: #fbfbfb !important;
-  margin-bottom: 10px;
-}
-
-.custom-model-detail-container .custom-model-detail-provider {
-  color: #29abe2 !important;
-}
