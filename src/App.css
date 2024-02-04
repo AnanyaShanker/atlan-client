@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('https://media.wired.co.uk/photos/606dafcb687a704c2c362125/16:9/w_1920,h_1080,c_limit/space_11.jpg'); /* Replace with the actual path to your image */
+  background-image: url('https://media.wired.co.uk/photos/606dafcb687a704c2c362125/16:9/w_1920,h_1080,c_limit/space_11.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -11,46 +11,23 @@ body {
 }
 
 .custom-navbar-bg {
-  background-color: #020609; /* Dark purple */
+  background-color: #020609;
   padding: 15px 0;
 }
 
 .custom-brand-text {
-  color: #29abe2; /* Light blue text */
+  color: #29abe2;
   font-size: 24px;
 }
 
 .custom-toggler {
-  border-color: #29abe2; /* Light blue border for the toggler */
+  border-color: #29abe2;
 }
 
 .custom-nav-link {
   color: #ffffff;
   font-size: 16px;
   margin-right: 20px;
-}
-
-.custom-dropdown {
-  color: #29abe2; /* Light blue text */
-}
-
-.custom-dropdown-item {
-  color: #29abe2;
-}
-
-.custom-dropdown-menu {
-  background-color: #e50a0a; /* Dark purple */
-  border: 1px solid #7d57a1; /* Lighter purple */
-}
-
-.custom-dropdown-menu a {
-  color: #ffffff;
-  padding: 10px 15px;
-}
-
-.custom-dropdown-menu a:hover {
-  background-color: #de0707; /* Lighter purple */
-  color: #2a1733; /* Dark purple */
 }
 
 .btn-spaceship {

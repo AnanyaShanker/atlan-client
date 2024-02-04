@@ -8,7 +8,6 @@ import LoadingPage from './LoadingPage';
 import ModelDetailPage from './ModelDetailPage'; // Import the ModelDetailPage component
 import Explore from './Explore.js';
 import './App.css';
-//import './Explore.css';
 
 const App = () => {
   const [showModelDetail, setShowModelDetail] = useState(false);

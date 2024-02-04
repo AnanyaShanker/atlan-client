@@ -1,20 +1,20 @@
 /* Explore.css */
 
-.explore-container {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.explore-body {
+    background-image: url('https://i.pinimg.com/236x/84/52/e8/8452e8992980d2c6dc8edbeb254da9fc.jpg');
+    background-size: cover;
+    color: #ffffff;
+    background-position: center;
     min-height: 100vh;
-}
-
-.explore-container body {
-    margin: 0;
-    display: initial; /* Reset the display property for the body within explore-container */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .explore-container {
-    background-image: url('https://i.pinimg.com/564x/a6/1e/39/a61e39571a62a9ea556a43afc8c81336.jpg');
+    background-image: url('https://i.pinimg.com/236x/84/52/e8/8452e8992980d2c6dc8edbeb254da9fc.jpg');
     background-size: cover;
     color: #ffffff;
     background-position: center;
@@ -36,12 +36,16 @@
 
 form {
     width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 form label {
     font-size: 1rem;
     margin-bottom: 5px;
-    color: #555;
+    color: #ddd;
 }
 
 form input,
@@ -49,14 +53,15 @@ form textarea {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #555;
     border-radius: 4px;
     box-sizing: border-box;
     margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 form button {
-    background-color: #007bff;
+    background-color: #29abe2;
     color: #fff;
     padding: 10px 15px;
     font-size: 1rem;
@@ -66,7 +71,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background-color: #1c7da2;
 }
 
 /* Explore.css */
