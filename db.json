@@ -44,11 +44,6 @@
     "code": "import deepspeech\n\n# Create a DeepSpeech model\nmodel = deepspeech.Model('path/to/deepspeech_model.pb')\n\n# Load an audio file\naudio_file = 'path/to/audio_file.wav'\n\n# Perform speech recognition\ntranscription = model.stt(audio_file)\n\n# Print the transcription\nprint('Transcription:', transcription)",
     "potential_use_cases": "\nVoice Assistants: Enable voice-controlled virtual assistants for hands-free interaction. \nTranscription Services: Automatically transcribe spoken content in meetings, interviews, or recorded audio. \nAccessibility: Improve accessibility for individuals with disabilities by converting spoken words into text.",
     "image_url": "https://images.spiceworks.com/wp-content/uploads/2022/04/14152224/116.png"
-  },
-
-  {
-    "id": 4,
-    "name": "Image to Text Model"
   }
   
 ]
