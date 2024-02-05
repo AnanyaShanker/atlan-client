@@ -6,8 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## JavaScript framework,along with any major packages
 
-npm install react-router-dom
-npm install axios
+#npm install react-router-dom
+
+##npm install axios
 npm install react-giphy-searchbox@^1.5.4
 npm install react-bootstrap@^2.10.0
 npm install react@^18.2.0
