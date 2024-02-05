@@ -8,6 +8,8 @@ import Explore from './Explore.js';
 import TryItOut from './TryItOut.js';
 import ImagetoText from './ImagetoText.js';
 import LoadingPage from './LoadingPage';
+
+
 import ModelDetail from './ModelDetail.js';
 import ModelDetailPage from './ModelDetailPage'; // Correct the import statement
 import './App.css';
@@ -15,7 +17,6 @@ import './App.css';
 const App = () => {
   const [showModelDetail, setShowModelDetail] = useState(false);
   const [showLoading, setShowLoading] = useState(false);
-
   
 
   const handleWhatsTrendingClick = () => {
@@ -30,8 +31,7 @@ const App = () => {
     }, 2500); // Adjust the timeout as needed
   };
 
-
-    
+ 
 
     // Define the handleImageConvert function
     const handleImageConvert = (selectedImage) => {
@@ -61,9 +61,9 @@ const App = () => {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <button className="btn btn-whats-trending" onClick={handleWhatsTrendingClick}>
-          <span role="img" aria-label="Rocket">🚀</span> What's Trending!
-        </button>
+      <button className="btn btn-whats-trending" onClick={handleWhatsTrendingClick}>
+              <span role="img" aria-label="Rocket">🚀</span> What's Trending!
+            </button>
 
         <button className="btn btn-explore" onClick={() => window.open('/explore', '_blank')}>
           <span role="img" aria-label="Globe">🌎</span> Explore

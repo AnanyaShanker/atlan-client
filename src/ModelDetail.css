@@ -1,6 +1,6 @@
 /* ModelDetail.css */
 .custom-model-detail-container {
-    background: url('https://i.pinimg.com/564x/a6/1e/39/a61e39571a62a9ea556a43afc8c81336.jpg') no-repeat center center fixed; /* Galaxy-themed background image */
+    background: url('https://i.pinimg.com/564x/a6/1e/39/a61e39571a62a9ea556a43afc8c81336.jpg') no-repeat center center fixed;
     background-size: cover;
     padding: 20px;
     margin: 20px;
@@ -8,28 +8,41 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content horizontally */
+    align-items: center;
 }
 
 .custom-model-detail-container .custom-model-detail-title {
-    color: #fdfdfd !important;
+    color: #fdfdfd;
     font-size: 2rem;
     font-weight: bold;
 }
 
 .custom-model-detail-container img.model-image {
-    width: 50%; /* Set the width of the image to 50% of its container */
-    height: auto; /* Maintain the aspect ratio */
-    border-radius: 8px; /* Add border-radius to the image for rounded corners */
-    margin-bottom: 20px; /* Add margin to separate the image from other content */
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .custom-model-detail-container p.custom-model-detail-description,
 .custom-model-detail-container p.custom-model-detail-code,
 .custom-model-detail-container p.custom-model-detail-potential-use-cases,
 .custom-model-detail-container p.custom-model-detail-provider {
-    color: #ffffff !important;
+    color: #ffffff;
     margin-bottom: 10px;
     font-weight: bold;
-    
+}
+
+.custom-model-detail-container button {
+    background-color: #29abe2; /* Light blue background for the spaceship button */
+  color: #ffffff; /* White text color */
+  border: none;
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.custom-model-detail-container button:hover {
+    background-color: #1c7da2; /* Darker green on hover */
 }

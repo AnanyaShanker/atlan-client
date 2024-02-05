@@ -22,6 +22,16 @@ const ModelDetail = () => {
       });
   }, [id]);
 
+  const copyCodeToClipboard = () => {
+    // Create a textarea element to copy the code
+    const textArea = document.createElement('textarea');
+    textArea.value = modelData.code;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+  };
+
   // Render loading state while fetching data
   if (!modelData) {
     return <div>Loading...</div>;
@@ -39,6 +49,7 @@ const ModelDetail = () => {
       <p className="custom-model-detail-provider">Provider: {modelData.provider}</p>
       <p className="custom-model-detail-code">
         <strong>Code:</strong>
+        <button onClick={copyCodeToClipboard}>Copy</button>
         <pre>{modelData.code}</pre>
       </p>
       <p className="custom-model-detail-potential-use-cases">

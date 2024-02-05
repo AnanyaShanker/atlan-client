@@ -204,3 +204,9 @@ p {
 }
 
 /* Add more styles as needed */
+/* LoadingExplorePage.css */
+.loading-explore-container {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
