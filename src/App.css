@@ -128,3 +128,79 @@
   background-color: #1c7da2; /* Darker blue on hover */
 }
 
+/* App.css */
+
+.btn-explore,
+.btn-whats-trending,
+.btn-try-it-out {
+  background-color: #29abe2;
+  color: #ffffff;
+  border: none;
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-explore:hover,
+.btn-whats-trending:hover,
+.btn-try-it-out:hover {
+  background-color: #1c7da2;
+}
+
+/* ImageToText.css (create a new CSS file if needed) */
+
+.image-to-text-container {
+  background-color: #05040b; /* Dark background color */
+  color: #ffffff; /* White text color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* White shadow for depth effect */
+}
+
+h2 {
+  color: #66d9ef; /* Cyan header color */
+}
+
+label {
+  color: #a9b7c6; /* Light gray label color */
+}
+
+input[type="file"] {
+  border: 1px solid #a9b7c6; /* Light gray border for file input */
+  padding: 8px;
+  background-color: #121212; /* Dark background for file input */
+  color: #ffffff; /* White text color for file input */
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+button {
+  background-color: #268bd2; /* Blue button color */
+  color: #ffffff; /* White text color for button */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4a90e2; /* Darker blue on hover */
+}
+
+/* Converted text container */
+.converted-text-container {
+  margin-top: 20px;
+}
+
+h3 {
+  color: #66d9ef; /* Cyan header color for converted text */
+}
+
+p {
+  color: #a9b7c6; /* Light gray text color for converted text */
+}
+
+/* Add more styles as needed */
