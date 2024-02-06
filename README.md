@@ -28,12 +28,24 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### optimisations
+### Page Load Time:
+
+Load: 617 ms
+
+The load time was observed by the following steps:
+
+Opened my Chrome browser.
+Right-click on my web page and then selecting "Inspect" to open the Developer Tools.
+Going to the "Network" tab.
+Refreshing the page, and and then seeing the network activity, including the time it takes to load various resources. The total page load time is then displayed at the bottom of the Network tab.
+
+#### Optimisations:
 
 Optimize Images:
 Compressed and resized images to reduce their file size without sacrificing quality.
 
 Minify and Bundle CSS and JavaScript:
+
 Minify CSS and JavaScript files to reduce their size by removing unnecessary characters and whitespace.
 Bundle multiple CSS and JavaScript files into a single file to reduce the number of requests.
 
