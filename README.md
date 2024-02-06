@@ -15,20 +15,28 @@ npm install react-giphy-searchbox@^1.5.4
 npm install react-bootstrap@^2.10.0
 
 npm install react@^18.2.0
+
 npm install bootstrap@^5.3.2
+
 npm install jquery@^3.7.1
+
 npm install json-server@^1.0.0-alpha.23
+
 npm install popper.js@^1.16.1
-
-
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### optimisations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Optimize Images:
+Compressed and resized images to reduce their file size without sacrificing quality.
+
+Minify and Bundle CSS and JavaScript:
+Minify CSS and JavaScript files to reduce their size by removing unnecessary characters and whitespace.
+Bundle multiple CSS and JavaScript files into a single file to reduce the number of requests.
+
 
 ### Analyzing the Bundle Size
 
