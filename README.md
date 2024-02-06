@@ -22,8 +22,6 @@ npm install jquery@^3.7.1
 
 npm install json-server@^1.0.0-alpha.23
 
-npm install popper.js@^1.16.1
-
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
