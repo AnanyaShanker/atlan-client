@@ -32,7 +32,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 Load: 617 ms
 
-The load time was observed by the following steps:
+#### The load time was observed by the following steps:
 
 Opened my Chrome browser.
 
@@ -42,7 +42,7 @@ Going to the "Network" tab.
 
 Refreshing the page, and and then seeing the network activity, including the time it takes to load various resources. The total page load time is then displayed at the bottom of the Network tab.
 
-#### Optimisations:
+### Optimisations:
 
 Optimize Images:
 Compressed and resized images to reduce their file size without sacrificing quality.
