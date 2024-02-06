@@ -6,9 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## JavaScript framework,along with any major packages
 
-#npm install react-router-dom
+npm install react-router-dom
 
-##npm install axios
+npm install axios
 
 npm install react-giphy-searchbox@^1.5.4
 
@@ -35,8 +35,11 @@ Load: 617 ms
 The load time was observed by the following steps:
 
 Opened my Chrome browser.
+
 Right-click on my web page and then selecting "Inspect" to open the Developer Tools.
+
 Going to the "Network" tab.
+
 Refreshing the page, and and then seeing the network activity, including the time it takes to load various resources. The total page load time is then displayed at the bottom of the Network tab.
 
 #### Optimisations:
