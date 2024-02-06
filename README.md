@@ -6,6 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## About the JavaScript framework and major packages
 
+The JavaScript framework use is React. It is used for building user interfaces, particularly for single-page applications (SPAs) where user interaction is dynamic and frequent. 
+The reasons for choosing React is becuase it allows to create reusable UI components that manage their own state, making it easier to build complex UIs.
+
 npm install react-router-dom
 
 npm install axios
