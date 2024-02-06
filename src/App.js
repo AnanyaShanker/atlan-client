@@ -34,7 +34,7 @@ const App = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <button className="btn btn-whats-trending" onClick={()=>handleWhatsTrendingClick}>
+            <button className="btn btn-whats-trending" onClick={handleWhatsTrendingClick}>
               <span role="img" aria-label="Rocket">🚀</span> What's Trending!
             </button>
             <button className="btn btn-explore" onClick={() => window.location.href = '/explore'}>
