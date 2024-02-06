@@ -1,6 +1,5 @@
-// ModelDetail.js
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom'; // Import Link from react-router-dom
 import axios from 'axios';
 import './ModelDetail.css';
 
@@ -42,6 +41,7 @@ const ModelDetail = () => {
 
   return (
     <div className="custom-model-detail-container">
+      <Link to="/" className="back-button">Back</Link> {/* Add Back button */}
       <h2 className="custom-model-detail-title">{modelData.name}</h2>
       <img src={modelData.image_url} alt={modelData.name} className="model-image" />
 

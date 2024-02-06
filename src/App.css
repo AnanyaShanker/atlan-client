@@ -101,6 +101,214 @@
 }
 
 .btn-custom {
+  background-color: #29abe2; /* Change this to the desired color */
+  color: #ffffff; /* Text color */
+}
+
+.btn-custom:hover {
+  background-color: #72a7bb; /* Change this to the desired color on hover */
+}
+
+/* App.css */
+/* App.css */
+
+.btn-explore,
+.btn-whats-trending {
+  background-color: #29abe2; /* Light blue background for the button */
+  color: #ffffff; /* White text color */
+  border: none;
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-explore:hover,
+.btn-whats-trending:hover {
+  background-color: #1c7da2; /* Darker blue on hover */
+}
+
+/* App.css */
+
+.btn-explore,
+.btn-whats-trending,
+.btn-try-it-out {
+  background-color: #29abe2;
+  color: #ffffff;
+  border: none;
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-explore:hover,
+.btn-whats-trending:hover,
+.btn-try-it-out:hover {
+  background-color: #1c7da2;
+}
+
+/* ImageToText.css (create a new CSS file if needed) */
+
+.image-to-text-container {
+  background-color: #05040b; /* Dark background color */
+  color: #ffffff; /* White text color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* White shadow for depth effect */
+}
+
+h2 {
+  color: #66d9ef; /* Cyan header color */
+}
+
+label {
+  color: #a9b7c6; /* Light gray label color */
+}
+
+input[type="file"] {
+  border: 1px solid #a9b7c6; /* Light gray border for file input */
+  padding: 8px;
+  background-color: #121212; /* Dark background for file input */
+  color: #ffffff; /* White text color for file input */
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+button {
+  background-color: #29abe2; /* Blue button color */
+  color: #ffffff; /* White text color for button */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4a90e2; /* Darker blue on hover */
+}
+
+/* Converted text container */
+.converted-text-container {
+  margin-top: 20px;
+}
+
+h3 {
+  color: #66d9ef; /* Cyan header color for converted text */
+}
+
+p {
+  color: #a9b7c6; /* Light gray text color for converted text */
+}
+
+
+/* Dark Galaxy Theme */
+/* Dark Galaxy Theme */
+/* App.css */
+
+/* Home.css */
+
+
+.custom-navbar-bg {
+  background-color: #020609;
+  padding: 15px 0;
+}
+
+.custom-brand-text {
+  color: #29abe2;
+  font-size: 24px;
+}
+
+.custom-toggler {
+  border-color: #29abe2;
+}
+
+.custom-nav-link {
+  color: #ffffff;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.btn-spaceship {
+  background-color: #29abe2; /* Light blue background for the spaceship button */
+  color: #ffffff; /* White text color */
+  border: none;
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-spaceship:hover {
+  background-color: #1c7da2; /* Darker blue on hover */
+}
+
+/* App.css */
+.custom-card {
+  flex-basis: calc(33.33% - 40px); /* Set the flex-basis to 33.33% minus margin on both sides */
+  box-sizing: border-box; /* Include padding and border in the total width */
+  height: 200px; /* Set a fixed height for all cards */
+  margin: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform-origin: center bottom;
+  opacity: 0;
+  background-color: #020609; /* Dark blue background for cards */
+}
+
+.loaded .custom-card {
+  opacity: 1;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.custom-card .card-body {
+  padding: 20px;
+  background-color: #12161b; /* Dark background for card body */
+  color: #ffffff;
+}
+
+.custom-card .card-title {
+  color: #29abe2; /* Light blue text for card title */
+  font-size: 1.8rem;
+}
+
+.custom-card .card-subtitle {
+  color: #feffff;
+}
+
+.custom-card .card-text {
+  color: #ffffff;
+  max-height: 80px; /* Set a maximum height for the text */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.loaded {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.btn-custom {
   background-color: #1c7da2; /* Change this to the desired color */
   color: #ffffff; /* Text color */
 }
@@ -176,7 +384,7 @@ input[type="file"] {
 }
 
 button {
-  background-color: #268bd2; /* Blue button color */
+  background-color: #29abe2; /* Blue button color */
   color: #ffffff; /* White text color for button */
   padding: 10px 15px;
   border: none;
@@ -265,7 +473,7 @@ body {
 }
 
 .try-it-out-container button {
-  background-color: #4d90fe; /* Blue button color */
+  background-color: #29abe2; /* Blue button color */
   color: #ffffff; /* White text */
   border: none;
   border-radius: 5px;
@@ -289,4 +497,14 @@ body {
 
 .model-output p {
   color: #cccccc; /* Light gray text */
+}
+
+/* App.css */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #000000; /* Background color for the footer */
+  padding: 10px 0; /* Adjust padding as needed */
 }

@@ -1,5 +1,6 @@
 // ImageToText.js
 import React, { useState } from 'react';
+//import './ImagetoText.css';
 
 const ImageToText = ({ onImageConvert }) => {
   const [selectedImage, setSelectedImage] = useState(null);

@@ -40,7 +40,7 @@ const Home = () => {
           <Card.Body className="d-flex flex-column align-items-center justify-content-center">
             <Card.Title className="text-center">{card.name}</Card.Title>
             <Card.Text className="text-center">{card.description}</Card.Text>
-            <Link to={`/model/${card.id}`} className="btn btn-primary" target="_blank">Read More</Link>
+            <Link to={`/model/${card.id}`} className="btn btn-primary" >Read More</Link>
           </Card.Body>
         </Card>
       ))}

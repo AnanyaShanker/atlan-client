@@ -1,11 +1,14 @@
+// index.js or your main file
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
 import App from './App';
+import { LoadingProvider } from './LoadingContext';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <LoadingProvider>
+      <App />
+    </LoadingProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
