@@ -203,10 +203,90 @@ p {
   color: #a9b7c6; /* Light gray text color for converted text */
 }
 
-/* Add more styles as needed */
-/* LoadingExplorePage.css */
-.loading-explore-container {
-  text-align: center;
-  margin-top: 50px;
-  font-size: 20px;
+
+/* Dark Galaxy Theme */
+/* Dark Galaxy Theme */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a; /* Dark background */
+  background-image: url('https://i.pinimg.com/564x/bf/bf/50/bfbf50181e5a228812f84c0126b31e1c.jpg');
+  color: #ffffff; /* White text */
+  font-family: Arial, sans-serif; /* Specify your preferred font */
+}
+
+/* Keyframes animation to float the container */
+@keyframes floatIn {
+  0% {
+    transform: translateY(-50px); /* Start position above the final position */
+    opacity: 0; /* Start with opacity 0 */
+  }
+  100% {
+    transform: translateY(0); /* Final position */
+    opacity: 1; /* Full opacity */
+  }
+}
+
+.try-it-out-container {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px; /* Limit the width of the container */
+  margin: 50px auto; /* Center the container horizontally and add space from the top */
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White box shadow */
+  animation: floatIn 0.5s ease forwards; /* Apply the animation */
+}
+
+.try-it-out-container h2 {
+  color: #ffffff; /* White heading */
+}
+
+.try-it-out-container label {
+  color: #ffffff; /* White label text */
+}
+
+.try-it-out-container select,
+.try-it-out-container input[type="file"] {
+  background-color: #1f1f1f; /* Dark gray background for inputs */
+  color: #ffffff; /* White text */
+  border: 1px solid #333333; /* Dark gray border */
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%; /* Make inputs fill the container width */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.try-it-out-container select:focus,
+.try-it-out-container input[type="file"]:focus {
+  outline: none;
+  border-color: #4d90fe; /* Focus border color */
+}
+
+.try-it-out-container button {
+  background-color: #4d90fe; /* Blue button color */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make button fill the container width */
+}
+
+.try-it-out-container button:hover {
+  background-color: #357ae8; /* Darker blue on hover */
+}
+
+.model-output {
+  margin-top: 20px;
+}
+
+.model-output h3 {
+  color: #ffffff; /* White heading */
+}
+
+.model-output p {
+  color: #cccccc; /* Light gray text */
 }
