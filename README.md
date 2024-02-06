@@ -41,7 +41,9 @@ Right-click on my web page and then selecting "Inspect" to open the Developer To
 
 Going to the "Network" tab.
 
-Refreshing the page, and and then seeing the network activity, including the time it takes to load various resources. The total page load time is then displayed at the bottom of the Network tab.
+Refreshing the page, and and then seeing the network activity, including the time it takes to load various resources. 
+
+The total page load time is then displayed at the bottom of the Network tab.
 
 ### Optimisations:
 
