@@ -4,7 +4,7 @@ This project introduces a dynamic and immersive web application designed to be t
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## JavaScript framework,along with any major packages
+## About the JavaScript framework and major packages
 
 npm install react-router-dom
 
