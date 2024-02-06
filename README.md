@@ -46,25 +46,14 @@ Refreshing the page, and and then seeing the network activity, including the tim
 ### Optimisations:
 
 Optimize Images:
+
 Compressed and resized images to reduce their file size without sacrificing quality.
 
 Minify and Bundle CSS and JavaScript:
 
 Minify CSS and JavaScript files to reduce their size by removing unnecessary characters and whitespace.
+
 Bundle multiple CSS and JavaScript files into a single file to reduce the number of requests.
-
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
