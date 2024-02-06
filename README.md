@@ -1,65 +1,61 @@
-# Getting Started with Create React App
+# Overview
+
+This project introduces a dynamic and immersive web application designed to be the ultimate hub for exploring, showcasing, and interacting with various AI models. My application provides an informative and enticing interface to delve into the vast landscape of AI models.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## About the JavaScript framework and major packages
 
-In the project directory, you can run:
+The JavaScript framework use is React. It is used for building user interfaces, particularly for single-page applications (SPAs) where user interaction is dynamic and frequent. 
+The reasons for choosing React is becuase it allows to create reusable UI components that manage their own state, making it easier to build complex UIs.
 
-### `npm start`
+npm install react-router-dom
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+npm install axios
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm install react-giphy-searchbox@^1.5.4
 
-### `npm test`
+npm install react-bootstrap@^2.10.0
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install react@^18.2.0
 
-### `npm run build`
+npm install bootstrap@^5.3.2
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install jquery@^3.7.1
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
+npm install json-server@^1.0.0-alpha.23
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Page Load Time:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Load: 617 ms
 
-### Analyzing the Bundle Size
+#### The load time was observed by the following steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Opened my Chrome browser.
 
-### Making a Progressive Web App
+Right-click on my web page and then selecting "Inspect" to open the Developer Tools.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Going to the "Network" tab.
 
-### Advanced Configuration
+Refreshing the page, and and then seeing the network activity, including the time it takes to load various resources. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The total page load time is then displayed at the bottom of the Network tab.
+
+### Optimisations:
+
+Optimize Images:
+
+Compressed and resized images to reduce their file size without sacrificing quality.
+
+Minify and Bundle CSS and JavaScript:
+
+Minify CSS and JavaScript files to reduce their size by removing unnecessary characters and whitespace.
+
+Bundle multiple CSS and JavaScript files into a single file to reduce the number of requests.
 
 ### Deployment
 
