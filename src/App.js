@@ -1,4 +1,5 @@
 // App.js
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -6,7 +7,7 @@ import { Container, Navbar } from 'react-bootstrap';
 import Home from './Home';
 import Explore from './Explore';
 import TryItOut from './TryItOut';
-import ImagetoText from './ImagetoText';
+import ImagetoText from './ImagetoText'; // Update import
 import LoadingPage from './LoadingPage';
 import ModelDetail from './ModelDetail';
 import ModelDetailPage from './ModelDetailPage';
@@ -24,6 +25,13 @@ const App = () => {
       setShowLoading(false);
       setShowModelDetail(true);
     }, 2500);
+  };
+
+  const handleImageConvert = async (image) => {
+    // Simulating a delay
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    // Return dummy text as a placeholder for image conversion
+    return "This is the converted text from the image.";
   };
 
   return (
@@ -51,7 +59,7 @@ const App = () => {
         <Route path="/" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <Home />)} />
         <Route path="/explore" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <Explore />)} />
         <Route path="/try-it-out-page" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <TryItOut />)} />
-        <Route path="/image-to-text" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <ImagetoText />)} />
+        <Route path="/image-to-text" element={<ImagetoText onImageConvert={handleImageConvert} />} /> {/* Ensure onImageConvert is passed */}
         <Route path="/model/:id" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <ModelDetail />)} />
         <Route path="/model-detail" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <ModelDetailPage />)} />
         <Route path="*" element={<Navigate to="/" />} />
