@@ -96,7 +96,7 @@ form {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     transform-origin: center bottom;
     position: relative; /* Make the container relative to position absolute for image placement */
-    background-image: url('https://images.wallpaperscraft.com/image/single/stars_galaxy_darkness_957565_1280x720.jpg');
+    background-image: url('./images/stars.jpg');
 }
 
 .submitted-info-box img {

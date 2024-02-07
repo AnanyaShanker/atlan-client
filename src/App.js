@@ -10,7 +10,7 @@ import ImagetoText from './ImagetoText';
 import LoadingPage from './LoadingPage';
 import ModelDetail from './ModelDetail';
 import ModelDetailPage from './ModelDetailPage';
-import Footer from './Footer'; // Import the Footer component
+import Footer from './Footer'; 
 import './App.css';
 
 const App = () => {
@@ -18,6 +18,7 @@ const App = () => {
   const [showLoading, setShowLoading] = React.useState(false);
 
   const handleWhatsTrendingClick = () => {
+    console.log("clicked");
     setShowLoading(true);
     setTimeout(() => {
       setShowLoading(false);
@@ -48,11 +49,11 @@ const App = () => {
       </Navbar>
       <Routes>
         <Route path="/" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <Home />)} />
-        <Route path="/explore" element={<Explore />} />
-        <Route path="/try-it-out-page" element={<TryItOut />} />
-        <Route path="/image-to-text" element={<ImagetoText />} />
-        <Route path="/model/:id" element={<ModelDetail />} />
-        <Route path="/model-detail" element={<ModelDetailPage />} />
+        <Route path="/explore" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <Explore />)} />
+        <Route path="/try-it-out-page" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <TryItOut />)} />
+        <Route path="/image-to-text" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <ImagetoText />)} />
+        <Route path="/model/:id" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <ModelDetail />)} />
+        <Route path="/model-detail" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <ModelDetailPage />)} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer /> {/* Include the Footer component */}
