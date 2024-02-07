@@ -1,34 +1,4 @@
 /* Explore.css */
-
-.explore-body {
-    background-image: url('https://hips.hearstapps.com/hmg-prod/images/panorama-milky-way-galaxy-with-stars-and-space-dust-royalty-free-image-1623176828.jpg?crop=1xw:0.88893xh;center,top&resize=1200:*');
-    background-size: cover;
-    color: #9c2b2b;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.explore-container {
-    background-image: url('https://i.pinimg.com/originals/1b/7a/98/1b7a98a8e456cf2e977599c78ba152e8.jpg');
-    background-size: cover;
-    color: #c81818;
-    background-position: center;
-    width: 60%;
-    max-width: 400px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Add margin to create space between form and heading */
-}
-
 .explore-heading {
     font-size: 2rem;
     color: #29abe2;
@@ -42,6 +12,7 @@
     margin-top: 10px; /* Adjust margin to move "Explore Space" lower */
     background-image: url('https://images.wallpaperscraft.com/image/single/stars_galaxy_darkness_957565_1280x720.jpg');
 }
+
 form {
     width: 100%;
     height: 360px; /* Set the height as per your requirement to make it square */
@@ -49,17 +20,16 @@ form {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    background-image: url('https://images.wallpaperscraft.com/image/single/stars_galaxy_darkness_957565_1280x720.jpg');
 }
-  
-  form label {
+
+form label {
     font-size: 1rem;
     margin-bottom: 5px;
     color: #ddd;
-  }
-  
-  form input,
-  form textarea {
+}
+
+form input,
+form textarea {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
@@ -69,10 +39,9 @@ form {
     margin-bottom: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
-    
-  }
-  
-  form button {
+}
+
+form button {
     background-color: #29abe2;
     color: #fff;
     padding: 4px 15px;
@@ -80,15 +49,15 @@ form {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  form button:hover {
+}
+
+form button:hover {
     background-color: #1c7da2;
-  }
-  
-  /* Style for Submitted Info Boxes */
- .submitted-info-box {
-    background-color: rgba(209, 8, 8, 0.1);
+}
+
+/* Style for Submitted Info Boxes */
+.submitted-info-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust transparency and color */
     margin: 20px;
     padding: 20px;
     border-radius: 8px;
@@ -96,7 +65,6 @@ form {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     transform-origin: center bottom;
     position: relative; /* Make the container relative to position absolute for image placement */
-    background-image: url('./images/stars.jpg');
 }
 
 .submitted-info-box img {
@@ -119,3 +87,21 @@ form {
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
+
+/* Explore.css */
+.form-image {
+    position: absolute; /* Position the image absolutely within the form container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire form */
+    opacity: 0.5; /* Adjust the opacity as needed */
+    z-index: -1; /* Push the image behind the form content */
+  }
+  
+  /* Add any additional styling for the form container if necessary */
+  .form-container {
+    position: relative; /* Position the container relatively for absolute positioning of the image */
+  }
+  

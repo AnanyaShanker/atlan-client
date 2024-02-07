@@ -1,6 +1,6 @@
 // LoadingPage.js
 import React from 'react';
-import './LoadingPage.css'; // Import your custom CSS for loading page styling
+import './App.css'; // Import your custom CSS for loading page styling
 
 const LoadingPage = () => {
   return (

@@ -1,7 +1,6 @@
-// ModelDetailPage.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './ModelDetailPage.css';
+import './App.css';
 
 const ModelDetailPage = () => {
   const [models, setModels] = useState([]);
@@ -28,7 +27,7 @@ const ModelDetailPage = () => {
       sortedModels = sortedModels.sort((a, b) => b.views - a.views);
     }
     setModels(sortedModels);
-    setSortBy(criteria);
+    setSortBy(criteria); // Update sortBy state here
   };
 
   return (
@@ -38,6 +37,7 @@ const ModelDetailPage = () => {
         <button onClick={() => sortModels('favorites')}>Developers Most Liked</button>
         <button onClick={() => sortModels('views')}>Developers Most Viewed</button>
       </div>
+      {sortBy && <p>Sorted by: {sortBy}</p>}
       {models.map((model, index) => (
         <div key={index} className="model-card">
           <h3>{model.name}</h3>
@@ -46,7 +46,6 @@ const ModelDetailPage = () => {
           <p>Likes: {model.favorites}</p>
         </div>
       ))}
-      {sortBy && <p>Sorted by: {sortBy}</p>}
     </div>
   );
 };

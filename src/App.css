@@ -1,7 +1,12 @@
-/* App.css */
+.custom-brand-text {
+  color: #29abe2;
+  font-size: 24px;
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
 
-/* Home.css */
-
+.custom-brand-text:hover {
+  color: #1c7da2; /* Change color on hover */
+}
 
 .custom-navbar-bg {
   background-color: #020609;
@@ -110,7 +115,6 @@
 }
 
 /* App.css */
-/* App.css */
 
 .btn-explore,
 .btn-whats-trending {
@@ -204,11 +208,6 @@ p {
 }
 
 
-/* Dark Galaxy Theme */
-/* Dark Galaxy Theme */
-/* App.css */
-
-/* Home.css */
 
 
 .custom-navbar-bg {
@@ -245,7 +244,7 @@ p {
   background-color: #1c7da2; /* Darker blue on hover */
 }
 
-/* App.css */
+
 .custom-card {
   flex-basis: calc(33.33% - 40px); /* Set the flex-basis to 33.33% minus margin on both sides */
   box-sizing: border-box; /* Include padding and border in the total width */
@@ -414,12 +413,10 @@ p {
 
 /* Dark Galaxy Theme */
 /* Dark Galaxy Theme */
-
 body {
   margin: 0;
   padding: 0;
   background-color: #0a0a0a; /* Dark background */
-  background-image: url('https://i.pinimg.com/564x/bf/bf/50/bfbf50181e5a228812f84c0126b31e1c.jpg');
   color: #ffffff; /* White text */
   font-family: Arial, sans-serif; /* Specify your preferred font */
 }
@@ -441,6 +438,7 @@ body {
   border-radius: 10px;
   max-width: 800px; /* Limit the width of the container */
   margin: 50px auto; /* Center the container horizontally and add space from the top */
+  background-image: url('https://i.pinimg.com/564x/bf/bf/50/bfbf50181e5a228812f84c0126b31e1c.jpg'); /* Background image only for this container */
   background-color: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White box shadow */
   animation: floatIn 0.5s ease forwards; /* Apply the animation */
@@ -499,12 +497,191 @@ body {
   color: #cccccc; /* Light gray text */
 }
 
-/* App.css */
+/* Footer.css */
 .footer {
   position: fixed;
   bottom: 0;
   width: 100%;
   text-align: center;
   background-color: #000000; /* Background color for the footer */
-  padding: 10px 0; /* Adjust padding as needed */
+  padding: 5px 0; /* Adjusted padding to make the footer thinner */
+  height: 30px; /* Adjusted height to make the footer thinner */
+}
+
+
+/* ModelDetailPage.css */
+.model-detail-page {
+  background-image: url('.\images\bluegalaxy.jpg');
+  background-size: cover;
+  color: #ffffff;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.sort-buttons {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sort-buttons button {
+  background-color: #29abe2;
+  color: #ffffff;
+  border: none;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sort-buttons button:hover {
+  background-color: #72a7bb;
+}
+
+.model-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.model-card {
+  width: 400px;
+  height: 250px;
+  margin: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Add opacity transition */
+  transform-origin: center bottom;
+  opacity: 0; /* Set initial opacity to 0 */
+  background-color: #020609;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.model-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.model-card h3 {
+  color: #29abe2;
+  font-size: 1.8rem;
+}
+
+.model-card p {
+  color: #ffffff;
+}
+
+.sort-info {
+  color: #29abe2;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Add a class to trigger the transition */
+.model-detail-page.loaded {
+  opacity: 1;
+}
+
+
+.model-detail-page.loaded .model-card {
+  opacity: 1;
+}
+
+/* ModelDetail.css */
+.custom-model-detail-container {
+  background: url('.\images\bluegalaxy.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-model-detail-container .custom-model-detail-title {
+  color: #fdfdfd;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.custom-model-detail-container img.model-image {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.custom-model-detail-container p.custom-model-detail-description,
+.custom-model-detail-container p.custom-model-detail-code,
+.custom-model-detail-container p.custom-model-detail-potential-use-cases,
+.custom-model-detail-container p.custom-model-detail-provider {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.custom-model-detail-container button {
+  background-color: #29abe2; /* Light blue background for the spaceship button */
+color: #ffffff; /* White text color */
+border: none;
+margin: 20px;
+padding: 10px 20px;
+cursor: pointer;
+font-size: 16px;
+}
+
+.custom-model-detail-container button:hover {
+  background-color: #1c7da2; 
+}
+
+/* LoadingPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+.loading-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #020609; /* Dark blue background for loading page */
+    color: #ffffff; /* White text color */
+    font-family: 'Playfair Display', serif; /* Use a mysterious-looking font */
+  }
+  
+  .loading-page img {
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+    margin-bottom: 1px;
+  }
+  
+  .loading-page p {
+    font-size: 1.5rem;
+  }
+  
+  .loading-page::after {
+    content: 'Launching...'; /* Loading text */
+    font-size: 1.2rem;
+  }
+  
+
+  /* Home.css */
+body.home-page {
+  margin: 0;
+  padding: 0;
+  background-image: url('.\images\space_11.webp');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

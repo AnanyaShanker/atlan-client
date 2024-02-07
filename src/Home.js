@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
-import backgroundImage from './images/space_11.webp';
-import './Home.css'; // Import a dedicated CSS file for the home page
+
+import './App.css'; // Import a dedicated CSS file for the home page
 
 const Home = () => {
   const [cardData, setCardData] = useState([]);

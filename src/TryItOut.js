@@ -1,11 +1,10 @@
-// TryItOut.js
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const TryItOut = () => {
   const [availableModels, setAvailableModels] = useState([]);
   const [selectedModel, setSelectedModel] = useState('');
-  const [modelOutput, setModelOutput] = useState('');
+  const [modelOutput] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -25,11 +24,6 @@ const TryItOut = () => {
       // Navigate to the image-to-text page
       navigate('/image-to-text');
     }
-  };
-
-  const handleImageConvert = (selectedImage) => {
-    // Placeholder for image conversion
-    setModelOutput('Model Output: This is some text from the image.');
   };
 
   return (

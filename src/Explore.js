@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './Explore.css';
 
+
 const Explore = () => {
   const [formData, setFormData] = useState({
     modelName: '',
@@ -32,7 +33,7 @@ const Explore = () => {
   return (
     <div>
       <h2 className="explore-heading">Upload Your Model Information</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="form-container">
         {/* Model Information Fields */}
         <div>
           <label htmlFor="modelName">Model Name:</label>
@@ -72,6 +73,10 @@ const Explore = () => {
         <div>
           <button type="submit">Submit</button>
         </div>
+
+        {/* Image within the form */}
+        <img src="https://i.pinimg.com/564x/d7/a5/74/d7a5745218306f4e3543b279737fffa8.jpg" alt="Form Background" className="form-image" />
+
       </form>
 
       {/* "Explore Space" Displayed Separately */}

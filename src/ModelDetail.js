@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom'; // Import Link from react-router-dom
 import axios from 'axios';
-import './ModelDetail.css';
+import './App.css';
 
 const ModelDetail = () => {
   const { id } = useParams(); // Retrieve the id from the URL
