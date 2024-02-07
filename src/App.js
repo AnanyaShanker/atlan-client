@@ -31,7 +31,7 @@ const App = () => {
     // Simulating a delay
     await new Promise(resolve => setTimeout(resolve, 1000));
     // Return dummy text as a placeholder for image conversion
-    return "This is the converted text from the image.";
+    return "This is the converted text from the image. Check the console";
   };
 
   return (
