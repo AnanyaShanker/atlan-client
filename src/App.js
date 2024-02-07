@@ -56,14 +56,15 @@ const App = () => {
         </Container>
       </Navbar>
       <Routes>
-        <Route path="/" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <Home />)} />
-        <Route path="/explore" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <Explore />)} />
-        <Route path="/try-it-out-page" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <TryItOut />)} />
-        <Route path="/image-to-text" element={<ImagetoText onImageConvert={handleImageConvert} />} /> {/* Ensure onImageConvert is passed */}
-        <Route path="/model/:id" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <ModelDetail />)} />
-        <Route path="/model-detail" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <ModelDetailPage />)} />
-        <Route path="*" element={<Navigate to="/" />} />
-      </Routes>
+  <Route path="/" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <Home />)} />
+  <Route path="/explore" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <Explore />)} />
+  <Route path="/try-it-out-page" element={showLoading ? <LoadingPage /> : (showModelDetail ? <ModelDetailPage /> : <TryItOut />)} />
+  <Route path="/image-to-text" element={<ImagetoText onImageConvert={handleImageConvert} />} />
+  <Route path="/model/:id" element={showLoading ? <LoadingPage /> : <ModelDetail />} />
+  <Route path="/model-detail" element={showModelDetail ? <ModelDetailPage /> : <Navigate to="/" />} />
+  <Route path="*" element={<Navigate to="/" />} />
+</Routes>
+
       <Footer /> {/* Include the Footer component */}
     </Router>
   );

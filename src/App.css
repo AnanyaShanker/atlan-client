@@ -1,3 +1,14 @@
+body.home-page {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://images.unsplash.com/photo-1570284613060-766c33850e00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .custom-brand-text {
   color: #29abe2;
   font-size: 24px;
@@ -674,14 +685,3 @@ font-size: 16px;
   }
   
 
-  /* Home.css */
-body.home-page {
-  margin: 0;
-  padding: 0;
-  background-image: url('https://cdn.labmanager.com/assets/articleNo/29843/aImg/53592/discovery-of-massive-early-galaxies-defies-prior-understanding-of-the-universe-m.webp ');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
