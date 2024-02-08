@@ -2,7 +2,7 @@
 
 This project introduces a dynamic and immersive web application designed to be the ultimate hub for exploring, showcasing, and interacting with various AI models. My application provides an informative and enticing interface to delve into the vast landscape of AI models.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App]
 
 ## Installation
 
