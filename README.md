@@ -19,7 +19,6 @@ The reasons for choosing React is becuase it allows to create reusable UI compon
 
 - `react-router-dom`
 - `axios`
-- `react-giphy-searchbox@^1.5.4`
 - `react-bootstrap@^2.10.0`
 - `react@^18.2.0`
 - `bootstrap@^5.3.2`
@@ -39,10 +38,6 @@ Load: _617 ms_
 - The total page load time is then displayed at the bottom of the Network tab.
 
 ### Optimisations:
-
-**Optimize Images:**
-
-Compressed and resized images to reduce their file size without sacrificing quality.
 
 **Minify and Bundle CSS and JavaScript:**
 
