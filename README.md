@@ -41,6 +41,6 @@ Load: _617 ms_
 
 **Minify and Bundle CSS and JavaScript:**
 
-Minify CSS and JavaScript files to reduce their size by removing unnecessary characters and whitespace.
+Minified CSS and JavaScript files to reduce their size by removing unnecessary characters and whitespace.
 
-Bundle multiple CSS and JavaScript files into a single file to reduce the number of requests.
+Bundled multiple CSS and JavaScript files into a single file to reduce the number of requests.
